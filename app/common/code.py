@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+响应请求状态码
+"""
+OK = 0
+PARAM_ERROR = 4001
+AUTHORIZATION_ERROR = 4101
+FORBIDDEN_ERROR = 4301
+NOT_EXIST_ERROR = 4401
+METHOD_NOT_ALLOW_ERROR= 4501
+SERVER_ERROR = 5001
+DB_ERROR = 5101
+UNKNOWN_ERROR = 5201
+
+
+CODE_MSG_MAP = {
+    OK: 'OK',
+    PARAM_ERROR: '请求参数错误',
+    NOT_EXIST_ERROR: '请求资源不存在',
+    AUTHORIZATION_ERROR: '认证授权错误',
+    METHOD_NOT_ALLOW_ERROR: '请求方法不支持',
+    FORBIDDEN_ERROR: '无权访问',
+    SERVER_ERROR: '内部服务器错误',
+    DB_ERROR: '数据库错误',
+    UNKNOWN_ERROR: "未知错误",
+}
+
